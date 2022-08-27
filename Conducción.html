@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Ejercicio: Conducción</h1>
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+    var edad = parseInt(prompt("Digita tu edad:"));
+    var licencia = prompt("¿Tienes licencia? S o N:");
+
+    if ((edad >= 18) && (licencia == "S")) {
+
+        imprimir("Puedes conducir");
+
+    } else {
+
+        imprimir("No puedes conducir");
+
+    }
+
+</script>

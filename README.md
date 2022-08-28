@@ -5,5 +5,5 @@
 - parseInt() (Función que convierte un String a entero)
 - Condicionales
 - Math.round() (Función para redondear números decimales)
-- Math.round(Math.random()*10) (Función para generar número aleatorios)
-- Ciclo: (While)
+- Math.round(Math.random()*10) (Función para generar números aleatorios)
+- Ciclo (While)

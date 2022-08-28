@@ -22,13 +22,20 @@
 
     }
 
+    function sorteo(numero) {
+
+        var numeroSorteado = Math.round(Math.random() * numero);
+        return numeroSorteado;
+
+    }
+
     // Math.round() -> Función para redondear números dédimales
     // Math.random() -> Función para generar número aleatorios entre 0 y 1
     // Math.round(Math.random() * 10) -> Manera completa para generar números aleatorios de 0 a 10
 
-
-    var numeroAleatorio = Math.round(Math.random() * 10);
-    var numeroDigitado = parseInt(prompt("Digite un número entre 0 y 10:"));
+    var numero = parseInt(prompt("Digite un número entre 0 a 10:"));
+    var numeroDigitado = parseInt(prompt("Digite un número entre 0 a " + numero));
+    var numeroAleatorio = sorteo(numero);
 
     if (numeroAleatorio == numeroDigitado) {
 
@@ -36,7 +43,15 @@
 
     } else {
 
-        imprimir("Lo siento, usted erró, el número aleatorio es: " + numeroAleatorio);
+        if (numeroAleatorio > numeroDigitado) {
+
+            imprimir("Lo siento, el número es menor al: " + numeroAleatorio);
+
+        } else {
+
+            imprimir("Lo siento, el número es mayor al: " + numeroAleatorio);
+
+        }
 
     }
 

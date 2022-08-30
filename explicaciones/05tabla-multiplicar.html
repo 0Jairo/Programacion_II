@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UFT-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabla de multiplicar</title>
+    </head>
+    <body>
+        <header>
+            <h2>Programa: Tabla de multiplicar</h2>
+        </header>
+        <main>
+            <script>
+
+                function saltarLinea() {
+
+                    document.write("<br />");
+                    document.write("<br />");
+
+                }
+
+                function imprimir(frase) {
+
+                    document.write(frase);
+                    saltarLinea();
+
+                }
+
+                var multiplicador = 1;
+
+                imprimir("Ciclo while");
+                while (multiplicador <= 10) {
+
+                    imprimir(4 * multiplicador);
+                    multiplicador++;
+
+                }
+
+                imprimir("Ciclo for");
+                for (var i = 1; i <= 10; i++) {
+
+                    imprimir(5 * i);
+
+                }
+
+            </script>
+        </main>
+        <footer>Aquí esta el footer</footer>
+    </body>
+
+</html>

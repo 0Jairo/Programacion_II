@@ -6,4 +6,4 @@
 - Condicionales
 - Math.round() (Función para redondear números decimales)
 - Math.round(Math.random()*10) (Función para generar números aleatorios)
-- Ciclo (While)
+- Ciclos (While y for)

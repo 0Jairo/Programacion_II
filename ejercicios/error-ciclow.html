@@ -5,7 +5,7 @@
         <meta charset="UTF-16" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Error con ciclos</title>
+        <title>Error con ciclos while</title>
     </head>
     <!--Cuerpo del documento-->
     <body>
@@ -31,10 +31,36 @@
 
                 }
 
+                function sortearNumero() {
+
+                    var numeroSorteado = Math.round(Math.random() * 10);
+                    return numeroSorteado;
+
+                }
+
+                var numeroAleatorio = sortearNumero();
+                var numeroDigitado = parseInt(prompt("Digite un número entre 0 y 10:"));
+                var itaraciones = 1;
+
+                if (numeroAleatorio == numeroDigitado) {
+
+                    imprimir("Felicidades, el número aleatorio es: " + numeroAleatorio);
+
+                } else {
+
+                    while (itaraciones <= 10) {
+
+                        imprimir("¡Lo siento, te equivocaste!, el número aleatorio es: " + numeroAleatorio);
+                        itaraciones += 1;
+
+                    }
+
+                }
+
             </script>
         </main>
         <!--Pie de página-->
-        <footer></footer>
+        <footer>Aquí esta el footer</footer>
     </body>
 
 </html>

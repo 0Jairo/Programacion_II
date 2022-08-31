@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mostrar nombre en un alert</title>
+    </head>
+    <body>
+        <header>
+            <h2>Ejercicio: Mostrar nombre en un alert, recibido por un input enviado por un botón</h2>
+        </header>
+        <main>
+            <h4>Escribe un texto:</h4>
+            <input />
+            <br />
+            <br />
+            <button>Enviar</button>
+            <script>
+
+                function mostrarTexto() {
+
+                    alert(textoIngresado.value);
+                    textoIngresado.focus();
+                
+                }
+
+                var textoIngresado = document.querySelector("input");
+                var boton = document.querySelector("button");
+
+                boton.onclick = mostrarTexto;
+                textoIngresado.focus();
+
+            </script>
+        </main>
+        <footer>Aquí esta el footer</footer>
+    </body>
+
+</html>

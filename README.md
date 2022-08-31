@@ -11,5 +11,6 @@
 - break (parar la iteración de un ciclo y salir del mismo)
 - 'document.querySelector("input" ó "button")' (]Captura la entrada de un input o button de HTML y lo lleva al mundo js)
 - input.value = "" (Limpiar un input)
+- input.value (obtener el valor digitado en la etiqueta input)
 - input.focus() (Dejar el cursor en un input)
 - button.onclick (Hacer algo despues que que el button sea presionado)

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Estrellas con cilo for</title>
+    </head>
+    <body>
+        <header>
+            <h2>Programa: Estrellas con ciclo for</h2>
+        </header>
+        <main>
+            <script>
+
+                // Función que no recibe ni retorna parámetros
+
+                function saltarLinea() {
+
+                    document.write("<br />");
+                    document.write("<br />");
+
+                }
+
+                // Función que recibe pero no retorna parámetros
+
+                function imprimir(frase) {
+
+                    document.write(frase);
+                    saltarLinea();
+
+                }
+
+                for(var filas = 1; filas <= 3;filas++) {
+
+                    for (var columnas = 1; columnas <= 10; columnas++) {
+
+                        document.write("*");
+
+                    }
+
+                    saltarLinea();
+
+                }
+
+                imprimir("Fin");
+
+            </script>
+        </main>
+        <footer>Aquí esta el footer</footer>
+    </body>
+
+</html>

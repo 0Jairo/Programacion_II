@@ -1,58 +1,80 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
 
-<h1>PROGRAMA: JUEGO DE ADIVINANZA</h1>
+    <head>
+        <meta charset="UTF-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego de adivinanza</title>
+    </head>
+    <body>
+        <header>
+            <h2>Porgrama: Juedo de adivinanza</h2>
+        </header>
+        <main>
+            <script>
 
-<script>
+                // Función que no recibe ni retorna parámetros
 
-    // Función que no recibe ni retorna parámetros
+                function saltarLinea() {
 
-    function saltarLinea() {
+                    document.write("<br />");
+                    document.write("<br />");
 
-        document.write("<br>");
-        document.write("<br>");
+                }
 
-    }
+                // Función que recibe pero no retorna parámetros
 
-    // Función que recibe pero no retorna parámetros
+                function imprimir(frase) {
 
-    function imprimir(frase) {
+                    document.write(frase);
+                    saltarLinea();
 
-        document.write(frase);
-        saltarLinea();
+                }
 
-    }
+                // Math.round() -> Función para redondear números dédimales
+                // Math.random() -> Función para generar número aleatorios entre 0 y 1
+                // Math.round(Math.random() * 10) -> Manera completa para generar números aleatorios de 0 a 10
 
-    function sorteo(numero) {
+                var numeroAleatorio = Math.round(Math.random() * 10);
+                var numeroDigitado = 0;
+                var intentos = 3;
+                var iterador = 1;
 
-        var numeroSorteado = Math.round(Math.random() * numero);
-        return numeroSorteado;
+                while (iterador <= intentos) {
 
-    }
+                    numeroDigitado = parseInt(prompt("Digite un número entre 0 y 10:"));
 
-    // Math.round() -> Función para redondear números dédimales
-    // Math.random() -> Función para generar número aleatorios entre 0 y 1
-    // Math.round(Math.random() * 10) -> Manera completa para generar números aleatorios de 0 a 10
+                    if (numeroAleatorio == numeroDigitado) {
 
-    var numero = parseInt(prompt("Digite un número entre 0 a 10:"));
-    var numeroDigitado = parseInt(prompt("Digite un número entre 0 a " + numero));
-    var numeroAleatorio = sorteo(numero);
+                        alert("Usted acertó, en el intento " + iterador + " el número aleatorio era: " + numeroAleatorio);
+                        break;
 
-    if (numeroAleatorio == numeroDigitado) {
+                    } else {
 
-        imprimir("Felicidades, usted acerto");
+                        alert("Lo siento, es otro número");
 
-    } else {
+                    }
 
-        if (numeroAleatorio > numeroDigitado) {
+                    iterador++;
 
-            imprimir("Lo siento, el número es menor al: " + numeroAleatorio);
+                }
 
-        } else {
+                if (numeroAleatorio == numeroDigitado) {
 
-            imprimir("Lo siento, el número es mayor al: " + numeroAleatorio);
+                    imprimir("Usted acertó, en el intento " + iterador + " el número aleatorio era: " + numeroAleatorio);
 
-        }
+                } else {
 
-    }
+                    imprimir("Usted erró, el número aleatorio era: " + numeroAleatorio);
 
-</script>
+                }
+
+                imprimir("Fin");
+
+            </script>
+        </main>
+        <footer>Aquí esta el footer</footer>
+    </body>
+
+</html>

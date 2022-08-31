@@ -7,4 +7,5 @@
 - Math.round() (Función para redondear números decimales)
 - Math.round(Math.random()*10) (Función para generar números aleatorios)
 - Ciclos (While y for)
+- Ciclos anidados
 - break (parar la iteración de un ciclo y salir del mismo)

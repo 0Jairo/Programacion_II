@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-16" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iniciar sesión</title>
+    </head>
+    <body>
+        <header>
+            <h2>Ejercicio: Iniciar sesión con 3 intentos</h2>
+        </header>
+        <main>
+            <script>
+
+                var usuario = "alura";
+                var contraseña = "alura321";
+                var intentos = 3;
+                var intentoActual = 1;
+
+                while (intentoActual <= intentos) {
+
+                    var usuarioIngresado = prompt("Ingrese su usuario:");
+                    var contraseñaIngresada = prompt("Ingrese su contraseña");
+
+                    if ((usuario == usuarioIngresado) && (contraseña == contraseñaIngresada)) {
+
+                        alert("Bienvenido al sistema " + usuario);
+                        break;
+
+                    } else {
+
+                        if (intentoActual == 3) {
+
+                            alert("Inicio de sesión incorrecto. Agotaste el número máximo de intentos permitidos");
+
+                        } else {
+
+                            alert("Inicio de sesión incorrecto. Porfavor intente de nuevo");
+
+                        }
+
+                    }
+
+                    intentoActual++;
+
+                }
+
+            </script>
+        </main>
+        <footer>Aquí esta el footer</footer>
+    </body>
+
+</html>

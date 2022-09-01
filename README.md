@@ -14,3 +14,4 @@
 - input.value (obtener el valor digitado en la etiqueta input)
 - input.focus() (Dejar el cursor en un input)
 - button.onclick (Hacer algo despues que que el button sea presionado)
+- Arreglos (Recorrer arrays y descubrir el tamaño del mismo nombre_array.length)
